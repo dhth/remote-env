@@ -1,2 +1,5 @@
 [tools]
 lazygit = "0.64.1"
+
+[shell_alias]
+lg = "lazygit"

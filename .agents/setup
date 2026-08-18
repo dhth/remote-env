@@ -4,4 +4,6 @@ set -euo pipefail
 
 curl -fsSL https://mise.run/bash | sh
 
-git config push.autoSetupRemote true
+if ! .agents/setup-user-env; then
+    echo "warning: user env could not be setup; continuing" >&2
+fi

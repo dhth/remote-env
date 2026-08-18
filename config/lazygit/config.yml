@@ -1,0 +1,6 @@
+promptToReturnFromSubprocess: false
+disableStartupPopups: true
+git:
+  autoFetch: false
+gui:
+  showRandomTip: false

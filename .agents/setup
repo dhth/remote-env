@@ -4,6 +4,4 @@ set -euo pipefail
 
 curl -fsSL https://mise.run/bash | sh
 
-if ! .agents/setup-user-env; then
-    echo "warning: user env could not be setup; continuing" >&2
-fi
+"$(dirname -- "${BASH_SOURCE[0]}")/../setup.sh"

@@ -1,5 +1,11 @@
 [tools]
 lazygit = "0.64.1"
+"npm:@kitlangton/terminal-control-darwin-arm64" = { version = "0.6.0", os = ["macos/arm64"] }
+
+[tools."github:dhth/terminal-control"]
+version = "0.6.0-r1"
+version_prefix = "musl-v"
+os = ["linux/x64"]
 
 [shell_alias]
 lg = "lazygit"

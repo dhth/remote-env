@@ -4,4 +4,12 @@ set -euo pipefail
 
 curl -fsSL https://mise.run/bash | sh
 
-"$(dirname -- "${BASH_SOURCE[0]}")/../setup.sh"
+repo_root="$(
+    cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." &&
+        pwd -P
+)"
+
+"$HOME/.local/bin/mise" --locked -C "$HOME" bootstrap \
+    --adopt "file://$repo_root" \
+    --update \
+    --yes

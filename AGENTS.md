@@ -13,25 +13,20 @@ useful across remote development environments. Do not move project-specific
 requirements here merely to share setup code. Configuration that applies to only
 one project belongs in that project's repository.
 
-## Public setup contract
+## Native mise bootstrap contract
 
-- `setup.sh` is the stable entry point used by caller repositories.
-- Caller repositories install mise before invoking `setup.sh`.
-- `setup.sh` must resolve files relative to its own location. Do not assume the
-  caller's working directory is this repository.
-- Keep `setup.sh` safe to run repeatedly.
-- Let `setup.sh` return failures normally. Callers decide whether personal setup
-  failures should be non-fatal.
-
-Callers know only that the configured user-environment repository contains an
-executable `setup.sh` at its root. Internal paths such as `config/` and
-`tools/base/` are not part of the public contract.
+- This repository is consumed directly with `mise bootstrap --adopt`.
+- Caller repositories install mise and invoke the bootstrap as optional,
+  non-fatal personal setup.
+- `config.toml` contains the global user tool set and bootstrap configuration.
+- Keep tool requests and the generated global `mise.lock` in sync. Regenerate
+  it from this checkout with `MISE_CONFIG_DIR="$PWD" mise lock --global`.
 
 ## Repository layout
 
-- `config/` mirrors `$XDG_CONFIG_HOME` and is copied into
-  `${XDG_CONFIG_HOME:-$HOME/.config}`.
-- `tools/base/` contains mise tools installed in every configured environment.
+- `config.toml` and `mise.lock` define the global user tools.
+- `config/` mirrors `~/.config` and is applied as a Git-manifest-backed
+  directory copy.
 - Tool-specific user configuration belongs under `config/<tool>/`.
 
 Do not add caches, generated state, credentials, tokens, or other secrets under

@@ -9,3 +9,6 @@ os = ["linux/x64"]
 
 [shell_alias]
 lg = "lazygit"
+
+[dotfiles]
+"~/.config" = { source = "config", mode = "copy", manifest = "git" }

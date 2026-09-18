@@ -14,8 +14,8 @@
         --all
     lnb = l \
         --perl-regexp --author='^(?!.*dependabot\\[bot\\])'
-	s = status --short
 	d = diff
+	f = fetch
 	ds = diff --staged
 	p = pull
 	c = clone
@@ -24,3 +24,5 @@
 	ms = merge --squash
 	s = status -sb
 	sh = show HEAD
+	rb = rebase origin/main
+	rbi = rebase -i origin/main

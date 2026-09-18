@@ -1,3 +1,5 @@
+min_version = "2026.9.11"
+
 [tools]
 lazygit = "0.64.1"
 "npm:@kitlangton/terminal-control-darwin-arm64" = { version = "0.6.0", os = ["macos/arm64"] }

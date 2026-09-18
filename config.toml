@@ -10,7 +10,9 @@ version_prefix = "musl-v"
 os = ["linux/x64"]
 
 [shell_alias]
+g = "git"
 lg = "lazygit"
+v = "vim"
 
 [dotfiles]
 "~/.config" = { source = "config", mode = "copy", manifest = "git" }

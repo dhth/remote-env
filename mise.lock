@@ -2,28 +2,10 @@
 
 lockfile_version = 2
 
-[[tools."github:dhth/terminal-control"]]
-version = "0.6.0-r1"
-backend = "github:dhth/terminal-control"
-specifiers = ["0.6.0-r1"]
-
-[tools."github:dhth/terminal-control".options]
-version_prefix = "musl-v"
-
-[tools."github:dhth/terminal-control"."platforms.linux-x64"]
-checksum = "sha256:63ae2cc1e83ac4e79d0ae7d2c606d87215b9831612d7f97440283356c1c03388"
-url = "https://github.com/dhth/terminal-control/releases/download/musl-v0.6.0-r1/termctrl-0.6.0-linux-x86_64-musl.tar.gz"
-url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/513997951"
-
-[tools."github:dhth/terminal-control"."platforms.linux-x64-musl"]
-checksum = "sha256:63ae2cc1e83ac4e79d0ae7d2c606d87215b9831612d7f97440283356c1c03388"
-url = "https://github.com/dhth/terminal-control/releases/download/musl-v0.6.0-r1/termctrl-0.6.0-linux-x86_64-musl.tar.gz"
-url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/513997951"
-
 [[tools.lazygit]]
 version = "0.64.1"
 backend = "aqua:jesseduffield/lazygit"
-specifiers = ["0.64.1"]
+specifiers = ["latest"]
 
 [tools.lazygit."platforms.linux-arm64"]
 checksum = "sha256:8b7ca3b344e60340ad1f89f29b9868ee39bcaba5bb92ee818bbe65476bb8b6e7"
@@ -60,8 +42,20 @@ checksum = "sha256:de8eca2cf2e75857882d313bf9dfc706a7aae893951ab29df706c99b52566
 url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygit_0.64.1_windows_x86_64.zip"
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894165"
 
-[[tools."npm:@kitlangton/terminal-control-darwin-arm64"]]
-version = "0.6.0"
-aube = { path = ".mise/locks/npm-kitlangton-terminal-control-darwin-arm64/0.6.0", digest = "sha256:f36df2b83cdc746afa50d36c2e66bc5a980db3c947c53c79841d173dc0020a1d" }
-backend = "npm:@kitlangton/terminal-control-darwin-arm64"
-specifiers = ["0.6.0"]
+[[tools.terminal-control]]
+version = "0.6.0-r1"
+backend = "github:dhth/terminal-control"
+specifiers = ["0.6.0-r1"]
+
+[tools.terminal-control.options]
+version_prefix = "musl-v"
+
+[tools.terminal-control."platforms.linux-x64"]
+checksum = "sha256:63ae2cc1e83ac4e79d0ae7d2c606d87215b9831612d7f97440283356c1c03388"
+url = "https://github.com/dhth/terminal-control/releases/download/musl-v0.6.0-r1/termctrl-0.6.0-linux-x86_64-musl.tar.gz"
+url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/513997951"
+
+[tools.terminal-control."platforms.linux-x64-musl"]
+checksum = "sha256:63ae2cc1e83ac4e79d0ae7d2c606d87215b9831612d7f97440283356c1c03388"
+url = "https://github.com/dhth/terminal-control/releases/download/musl-v0.6.0-r1/termctrl-0.6.0-linux-x86_64-musl.tar.gz"
+url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/513997951"

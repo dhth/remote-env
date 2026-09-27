@@ -1,6 +1,12 @@
 promptToReturnFromSubprocess: false
 disableStartupPopups: true
 git:
-  autoFetch: false
+  autoFetch: true
 gui:
   showRandomTip: false
+  showCommandLog: false
+  screenMode: normal
+  sidePanels:
+    - [files]
+    - [branches]
+    - [commits]

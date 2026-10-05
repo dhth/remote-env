@@ -3,7 +3,7 @@ min_version = "2026.9.11"
 [tools]
 jq = "latest"
 lazygit = "latest"
-terminal-control = { version = "0.6.0-r1", version_prefix = "musl-v", os = ["linux/x64"] }
+terminal-control = { version = "1.2.1-r1", version_prefix = "musl-v", os = ["linux/x64"] }
 
 [tool_alias]
 terminal-control = "github:dhth/terminal-control"

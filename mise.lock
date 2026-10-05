@@ -90,19 +90,19 @@ url = "https://github.com/jesseduffield/lazygit/releases/download/v0.64.1/lazygi
 url_api = "https://api.github.com/repos/jesseduffield/lazygit/releases/assets/511894165"
 
 [[tools.terminal-control]]
-version = "0.6.0-r1"
+version = "1.2.1-r1"
 backend = "github:dhth/terminal-control"
-specifiers = ["0.6.0-r1"]
+specifiers = ["1.2.1-r1"]
 
 [tools.terminal-control.options]
 version_prefix = "musl-v"
 
 [tools.terminal-control."platforms.linux-x64"]
-checksum = "sha256:63ae2cc1e83ac4e79d0ae7d2c606d87215b9831612d7f97440283356c1c03388"
-url = "https://github.com/dhth/terminal-control/releases/download/musl-v0.6.0-r1/termctrl-0.6.0-linux-x86_64-musl.tar.gz"
-url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/513997951"
+checksum = "sha256:729a1b1637901ba52504ce31d88b7676ca0a6770acb0a5b77cd913c1cc58ad4b"
+url = "https://github.com/dhth/terminal-control/releases/download/musl-v1.2.1-r1/termctrl-1.2.1-linux-x86_64-musl.tar.gz"
+url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/613152665"
 
 [tools.terminal-control."platforms.linux-x64-musl"]
-checksum = "sha256:63ae2cc1e83ac4e79d0ae7d2c606d87215b9831612d7f97440283356c1c03388"
-url = "https://github.com/dhth/terminal-control/releases/download/musl-v0.6.0-r1/termctrl-0.6.0-linux-x86_64-musl.tar.gz"
-url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/513997951"
+checksum = "sha256:729a1b1637901ba52504ce31d88b7676ca0a6770acb0a5b77cd913c1cc58ad4b"
+url = "https://github.com/dhth/terminal-control/releases/download/musl-v1.2.1-r1/termctrl-1.2.1-linux-x86_64-musl.tar.gz"
+url_api = "https://api.github.com/repos/dhth/terminal-control/releases/assets/613152665"

@@ -26,3 +26,6 @@
 	sh = show HEAD
 	rb = rebase origin/main
 	rbi = rebase -i origin/main
+[hook "strip-ai-attribution"]
+	event = commit-msg
+	command = ~/.config/git/hooks/strip-ai-attribution
